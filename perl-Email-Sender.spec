@@ -32,8 +32,11 @@ BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Sys::Hostname::Long)
 BuildRequires: perl(Throwable::Error)
 BuildRequires: perl(Try::Tiny)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
+
+Requires: perl(Throwable::Error)
 
 %description
 An Email::Sender::Success object is just an indicator that an email message
@@ -44,11 +47,10 @@ was successfully sent. Unless extended, it has no properties of its own.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
