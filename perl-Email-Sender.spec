@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    An SMTP client that stays online
 License:    GPL+ or Artistic
@@ -12,6 +12,7 @@ Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Email/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Capture::Tiny)
+BuildRequires: perl-Capture-Tiny >= 0.80
 BuildRequires: perl(Carp)
 BuildRequires: perl(Cwd)
 BuildRequires: perl(Email::Abstract)
