@@ -1,15 +1,15 @@
 %define upstream_name    Email-Sender
-%define upstream_version 0.110001
+%define upstream_version 1.300006
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	An SMTP client that stays online
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Email/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Email/Email-Sender-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Capture::Tiny)
@@ -105,3 +105,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed Jan 13 2010 cpan2dist 0.100110-1mdv
 - initial mdv release, generated with cpan2dist
+
