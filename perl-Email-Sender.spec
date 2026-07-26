@@ -1,15 +1,13 @@
 %define upstream_name    Email-Sender
-%define upstream_version 2.601
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	2.601
+Release:	2
 
 Summary:	An SMTP client that stays online
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rjbs/Email-Sender
-Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Email-Sender-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Email-Sender-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -44,7 +42,7 @@ An Email::Sender::Success object is just an indicator that an email message
 was successfully sent. Unless extended, it has no properties of its own.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
