@@ -1,7 +1,7 @@
 %define upstream_name    Email-Sender
 Name:		perl-%{upstream_name}
 Version:	2.601
-Release:	2
+Release:	1
 
 Summary:	An SMTP client that stays online
 License:	GPL+ or Artistic
