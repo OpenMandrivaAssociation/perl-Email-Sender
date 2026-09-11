@@ -33,6 +33,12 @@ BuildRequires:	perl(Scalar::Util)
 BuildRequires:	perl(Sys::Hostname::Long)
 BuildRequires:	perl(Throwable::Error)
 BuildRequires:	perl(Try::Tiny)
+BuildRequires:	perl(Email::Address::XS)
+BuildRequires:	perl(Module::Runtime)
+BuildRequires:	perl(Moo)
+BuildRequires:	perl(MooX::Types::MooseLike)
+BuildRequires:	perl(Sub::Exporter)
+BuildRequires:	perl(Test::More)
 
 BuildArch:	noarch
 Requires:	perl(Throwable::Error)
